@@ -4,7 +4,7 @@ const getComputerChoice = () => {
 }
 
 const playRound = (playerSelection, computerSelection) = () => {
-
+    
 }
 
 const playerSelection = 'rock'
