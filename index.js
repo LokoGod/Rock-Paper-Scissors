@@ -3,8 +3,10 @@ const getComputerChoice = () => {
     return options[(Math.floor(Math.random() * options.length))]
 }
 
-console.log(getComputerChoice());
+const playRound = (playerSelection, computerSelection) = () => {
 
+}
 
-console.log("Result : " + Math.floor(-89.02));
-
+const playerSelection = 'rock'
+const computerSelection = getComputerChoice()
+console.log(playRound(playerSelection, computerSelection));
