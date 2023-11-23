@@ -12,8 +12,8 @@ const playRound = (playerSelection, computerSelection) = () => {
     if (playerChoice === computerSelection) {
         return "It's a tie!"
     } else if ((playerChoice === 'Rock' && computerSelection === 'Scissors') ||
-     (playerChoice === 'Paper' && computerSelection === 'Rock') ||
-      (playerChoice === 'Scissors' && computerSelection === 'Paper')) {
+        (playerChoice === 'Paper' && computerSelection === 'Rock') ||
+        (playerChoice === 'Scissors' && computerSelection === 'Paper')) {
         return `You win! ${playerChoice} beats ${computerSelection}`
     } else {
         return `You lose! ${computerSelection} beats ${playerChoice}`
@@ -21,7 +21,13 @@ const playRound = (playerSelection, computerSelection) = () => {
 }
 
 const game = () => {
-    
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for (let round = 1; round <=5; round++) {
+        const playerSelection = prompt('Enter your choice: Rock, Paper or Scissors')
+        const computerSelection = getComputerChoice();
+    }
 }
 
 
